@@ -1,0 +1,18 @@
+server:  
+  port: 8081
+  error:    
+    include-message: always
+    
+#TODO: DB MONGO
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: ms-clientes
+      repositories:
+        enabled: true
+        
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
